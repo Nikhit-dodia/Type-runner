@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+body {
+    background: #1a1e23;
+    margin: 0;
+  }
+.container {
+    width: 80vmin; /* just changed 80vmin to 90vmin*/
+    padding: 50px 30px; /* 50->45 & 30->27*/
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;/* 10->30*/
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+.stats {
+    text-align: right;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+  }
+.stats span {
+    font-weight: 600;
+  }
+#quote {
+    text-align: justify;
+    margin: 50px 0 30px 0;
+  }
+textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    font-size: 16px;
+  }
+button {
+    float: right;
+    margin-top: 20px;
+    background-color:rgb(0, 0, 0);
+    color: #48fd81;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+.result {
+    margin-top: 40px;
+    display: none;
+  }
+.result h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+.wrapper span {
+    font-weight: 600;
+  }
+.success {
+    color: #00ff51;
+  }
+.fail {
+    color: #ff0141;
+  }
+  
+.heading{
+      font-size: 37px;
+      /* color: linear-gradient(rgb(31, 255, 98), rgb(27, 255, 198)); */
+      /* background: linear-gradient(rgb(65, 253, 122), rgb(27, 255, 198)); */
+      color: #48fd81;
+      display: flex;
+      justify-content: center;
+      font-family: "Audiowide", sans-serif;
+  }
+  
+#light a {
+  position: absolute;     /* Position them relative to the browser window */
+  left: -72px;            /* Position them outside of the screen */
+  transition: 0.3s;       
+  padding: 5px;          
+  width: 100px;          
+  text-decoration: none;  
+  font-size: 20px;       
+  color: rgb(0, 0, 0);  /* White text color */
+  border-radius: 0 8px 8px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#light a:hover {
+  left: 0;     /* On mouse-over, make the elements appear as they should */
+}
+
+#dark a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -72px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 5px; /* 15px padding */
+  width: 100px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 8px 8px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#dark a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#lm {
+  top: 500px;
+  background-color: #98ffd9;
+}
+#dm {
+  top: 600px;
+  background-color: #313131;
+}
